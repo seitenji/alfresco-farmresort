@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    color: #000000;
+    background-color: #F6F5EA;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin: 1.3rem 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1.1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    height: 100%;
+}
+
+.btn {
+    padding: 1.2rem 2.8rem;
+    margin: 1.5rem;
+    background-color: #174794;
+    color: #ffffff;
+}
+
+a.link {
+    display: inline-block;
+    padding: 1rem 1.8rem;
+    border: 1px #174794 solid; 
+    color: #174794;
+    font-weight: bold;
+    margin: 1.25rem 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.1rem;
+    position: fixed;
+    width: 100%;
+    max-width: 1100px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: #F6F5EA;
+}
+
+.navbar.cus-nav {
+    background: #F6F5EA;
+}
+
+.nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.nav-ul li {
+    padding: 2rem 0;
+}
+
+.nav-ul.show {
+    display: flex;
+}
+
+/* Headline */
+.headline .container {
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.headline .btn {
+    margin-top: 2rem;
+}
+
+.headline a {
+    font-size: 1.3rem;
+}
+
+/* Packages */
+.title {
+    margin-bottom: 4rem;
+}
+
+/* CTA */
+.cta {
+    background-color: #9B9E4F;
+    color: #ffffff;
+}
+
+.cta .container {
+    padding-bottom: 3.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    color: #9B9E4F;
+}
+
+.contact .container {
+    margin: 80px auto;
+}
+
+.contact h1 {
+    margin: 0;
+}
+
+.contact-number {
+    margin-bottom: 50px;
+}
+
+.book .field {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+.book .field input,
+.book .field textarea {
+    width: 100%;
+    border-color: #E2E2DC;
+    padding: 1rem;
+    border-style: solid;
+}
+
+.form-btn {
+    font-size: 1rem;
+    border: none;
+}
+
+/* Footer */
+.footer {
+    text-align: left;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    align-items: center; 
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.footer .sns,
+.footer .number {
+    display: flex;
+    flex-direction: column;
+}
+
+.fb,
+.footer h2 a{
+    color: #174794;
+}
+
+/* Tablet and up */
+@media(min-width: 768px) {
+    /* Headline */
+    .headline .container {
+        height: 100%;
+    }
+    .book .field {
+        width: 80%;
+    }
+}
+
+/* Laptop and up */
+@media(min-width: 1024px) {
+    /* Navbar */
+    .toggle-button {
+        display: none;
+    }
+    .navbar {
+        height: 80px;
+        flex-wrap: nowrap;
+        padding: 0 1.1rem;
+    }
+    .nav-ul {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+    .nav-ul li {
+        margin-left: 1.5rem;
+    }
+    .headline h1 {
+        margin: 2rem 0;
+    }
+    .title {
+        margin: 5rem auto 6.5rem;
+        width: 80%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .box {
+        height: 570px;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        margin: 1.5rem auto 5rem;
+    }
+    .footer h2 {
+        margin: 0;
+    }
+    .book .field {
+        width: 50%;
+    }
+}
+
+/* Desktop and up */
+@media(min-width: 1600px) {
+    body {
+        font-size: 1.3rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        margin: 1.3rem 0;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        margin: .5rem 0;
+    }
+    .headline .btn {
+        font-size: 1.5rem;
+    }
+    .cta {
+        margin: 5rem auto;
+    }
+
+    .cta .container {
+        padding: 2.5rem 0 3.5rem;
+    }
+}

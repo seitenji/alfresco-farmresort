@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Fresco Farm Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/images/logo-2_03.png" type="image/x-icon">
+    <!-- <script src="js/script.js" defer></script> -->
+</head>
+<body>
+    <main>
+        <div id="navbar" class="navbar">
+            <a href="index.html"><img src="images/logo2.png" alt="Al Fresco Farm Resort"></a>
+            <a class="toggle-button" id="toggle-button"><i class="fas fa-bars fa-2x"></i></a>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a class="fb" href="https://www.facebook.com/AlFrescoFarmResortPH" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </div>
+        <!-- Headline -->
+        <section class="headline">
+            <div class="container">
+                <h1>Take a break and unwind in a farm&nbsp;resort.</h1> 
+                <img src="images/main.jpg" alt="" />
+                <a href="book.html" class="btn">Book Now</a>
+            </div>
+        </section>
+        <section class="sub-title">
+            <div class="container">
+                <h3 class="title">Al Fresco farm resort offers a happy place to enjoy life. Get out of the city once in a while and experience the green and farm-resort life.</h3> 
+            </div>
+        </section>
+        <div class="container grid">
+            <!-- Amenities -->
+            <section class="amenities">
+                <div class="box">
+                    <h2>Amenities</h2>
+                    <img src="images/kayak2.jpg" alt="" />
+                    <p>You can enjoy a farm-to-table diner, pool, fishing, ktv, staycation and even events. There is a lot more for you&nbsp;here!</p>
+                </div>
+                <a href="amenities.html" class="link">Check now</a>
+            </section>
+            <!-- Packages -->
+            <section class="packages">
+                <div class="box">
+                    <h2>Packages</h2>
+                    <img src="images/gazebo1.jpg" alt="" />
+                    <p>We offer different kind of packages depending on your&nbsp;choice.</p>
+                </div>
+                <a href="packages.html" class="link">Learn more</a>
+            </section>
+        </div>
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h1>Create memories with your loved ones in this place.</h1>
+                <a href="book.html" class="cta-btn">Book Now</a>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="sns">
+                    <h2><a href="index.html">Al Fresco.</a></h2>
+                    &copy; 2021
+                    <br />
+                    <br />
+                    <a class="fb" href="https://www.facebook.com/AlFrescoFarmResortPH" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg"></i></a>
+                </div>
+                <div class="address">
+                    Al Fresco Farm Resort, Alicia, Isabela
+                </div>
+                <div class="number">
+                    <a href="tel:09171430506">09171430506</a>
+                    <a href="tel:09189287902">09189287902</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const navUL = document.getElementById('nav-ul') 
+        const toggleButton = document.getElementById('toggle-button')
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        })
+        
+        // window.addEventListener('scroll', () => {
+        //     let menuArea = document.getElementById('navbar');
+
+        //     if(window.pageYOffset > 0) {
+        //         menuArea.classList.add('cus-nav');
+        //     }
+        //     else {
+        //         menuArea.classList.remove('cus-nav');
+        //     }
+        // });
+    </script>
+</body>
+</html>

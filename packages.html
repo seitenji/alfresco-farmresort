@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Fresco Farm Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="icon" href="images/images/logo-2_03.png" type="image/x-icon">
+    <!-- <script src="js/script.js" defer></script> -->
+</head>
+<body>
+    <main>
+        <div id="navbar" class="navbar">
+            <a href="index.html"><img src="images/logo2.png" alt="Al Fresco Farm Resort"></a>
+            <a class="toggle-button" id="toggle-button"><i class="fas fa-bars fa-2x"></i></a>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a class="fb" href="https://www.facebook.com/AlFrescoFarmResortPH" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </div>
+        <section class="main-packages">
+            <div class="container">
+                <h1>Packages</h1>
+                <ul>
+                    <li>Exclusive</li>
+                    <li>Semi-exclusive</li>
+                    <li>Separate entrance</li>
+                    <li>With Food and drinks entrance</li>
+                </ul>
+                <div class="foods">
+                    <h2>These are the menus available at Al Fresco Farm Resort</h2>
+                    <ul>
+                        <li>Fresh tilapia 🐟 turo mo ihaw mo (seasonal) (minimum charge)</li>
+                        <li>Food hub, fresh papaya, Mango, eggplant, okra, sitaw, tomato, kalabasa, upo, etc (seasonal) 🥭 🍈 🍆 🍅</li>
+                        <li>Short order, tinola, tusilog, chiksilog, hotsilog, chicken sandwich, crab sandwich, siomai, gyoza, ice cream, etc🍲 🍜 😋 🥄</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="sns">
+                    <h2><a href="index.html">Al Fresco.</a></h2>
+                    &copy; 2021
+                    <br />
+                    <br />
+                    <a class="fb" href="https://www.facebook.com/AlFrescoFarmResortPH" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg"></i></a>
+                </div>
+                <div class="address">
+                    Al Fresco Farm Resort, Alicia, Isabela
+                </div>
+                <div class="number">
+                    <a href="tel:09171430506">09171430506</a>
+                    <a href="tel:09189287902">09189287902</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const navUL = document.getElementById('nav-ul') 
+        const toggleButton = document.getElementById('toggle-button')
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        })
+        
+        // window.addEventListener('scroll', () => {
+        //     let menuArea = document.getElementById('navbar');
+
+        //     if(window.pageYOffset > 0) {
+        //         menuArea.classList.add('cus-nav');
+        //     }
+        //     else {
+        //         menuArea.classList.remove('cus-nav');
+        //     }
+        // });
+    </script>
+</body>
+</html>
