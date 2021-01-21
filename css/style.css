@@ -363,6 +363,9 @@ a.link {
         font-size: 1.7rem;
         margin: .5rem 0;
     }
+    .headline h1 {
+        width: 75%;
+    }
     .headline .btn {
         font-size: 1.5rem;
     }
