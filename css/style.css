@@ -55,6 +55,7 @@ p {
 }
 
 .btn {
+    display: inline-block;
     padding: 1.2rem 2.8rem;
     margin: 1.5rem;
     background-color: #174794;
@@ -94,12 +95,12 @@ a.link {
     display: none;
     flex-direction: column;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
 }
 
 .nav-ul li {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .nav-ul.show {
@@ -177,6 +178,64 @@ a.link {
     border: none;
 }
 
+/* Main amenities */
+.amenities-title .container {
+    margin-top: 80px;
+}
+
+.main-amenities p {
+    padding: 0 0.5rem;
+}
+
+.main-amenities h1,
+.main-amenities h2 {
+    margin: .5rem auto;
+}
+
+.book-here {
+    margin-bottom: 2rem;
+}
+
+.book-here .btn {
+    margin: auto;
+}
+
+.main-amenities .container > div {
+    margin: 1rem auto 3rem;
+}
+
+.main-packages .container {
+    margin-top: 80px;
+}
+
+.main-packages .entrance {
+    font-size: 1.35rem;
+}
+
+.foods {
+    margin: 5rem auto;
+}
+
+/* Gallery */
+.main-gallery .container {
+    margin-top: 80px;
+}
+.gallery img {
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery-item {
+    height: auto;
+    margin: 0.5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Footer */
 .footer {
     text-align: left;
@@ -210,6 +269,11 @@ a.link {
     .book .field {
         width: 80%;
     }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }
 
 /* Laptop and up */
@@ -240,6 +304,9 @@ a.link {
         margin: 5rem auto 6.5rem;
         width: 80%;
     }
+    .main-packages .title {
+        margin: 4rem auto 3rem;
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -261,6 +328,20 @@ a.link {
     .book .field {
         width: 50%;
     }
+    .main-amenities .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+    }
+    .main-amenities .container > div {
+        margin: auto;
+        height: 530px;
+    }
+
+    .amenities-book .container {
+        margin-bottom: 4rem;
+    }
 }
 
 /* Desktop and up */
@@ -274,12 +355,12 @@ a.link {
     }
     
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 1.3rem 0;
     }
     
     h3 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin: .5rem 0;
     }
     .headline .btn {
