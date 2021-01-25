@@ -124,9 +124,21 @@ a.link {
     font-size: 1.3rem;
 }
 
+.headline h1 {
+    font-size: 1.5rem;
+}
+
 /* Packages */
 .title {
     margin: 2rem auto;
+}
+
+.packages img {
+    max-width: 720px;
+}
+
+a.see-more {
+    margin: 0 0 3rem;
 }
 
 /* CTA */
@@ -182,6 +194,11 @@ a.link {
 .amenities-title .container {
     margin-top: 80px;
 }
+
+.index .container {
+    margin-top: 0;
+}
+
 
 .main-amenities p {
     padding: 0 0.5rem;
@@ -307,14 +324,14 @@ a.link {
     .main-packages .title {
         margin: 4rem auto 3rem;
     }
-    .grid {
+    /* .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
-    }
-    .box {
+    } */
+    /* .box {
         height: 570px;
-    }
+    } */
     .footer .container {
         display: flex;
         justify-content: space-between;
