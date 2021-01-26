@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +60,11 @@ p {
     margin: 1.5rem;
     background-color: #174794;
     color: #ffffff;
+    transition: background .5s ease-out;
+}
+
+.btn:hover {
+    background-color: #0e2f51;
 }
 
 a.link {
@@ -69,6 +74,12 @@ a.link {
     color: #174794;
     font-weight: bold;
     margin: 1.25rem 0;
+    transition: all .5s ease-out;
+}
+
+a.link:hover {
+    color: #ffffff;
+    background-color: #174794;
 }
 
 /* Navbar */
@@ -103,8 +114,16 @@ a.link {
     padding: 1rem 0;
 }
 
+.nav-ul li:hover {
+    border-bottom: 1px solid #333333;
+}
+
 .nav-ul.show {
     display: flex;
+}
+
+.nav-logo {
+    width: 125%;
 }
 
 /* Headline */
@@ -157,6 +176,12 @@ a.see-more {
     margin-top: 1rem;
     background-color: #ffffff;
     color: #9B9E4F;
+    transition: background .5s ease-out;
+}
+
+.cta-btn:hover {
+    background-color: #cdcdcd;
+    color: #9B9E4F;
 }
 
 .contact .container {
@@ -188,6 +213,7 @@ a.see-more {
 .form-btn {
     font-size: 1rem;
     border: none;
+    cursor: pointer;
 }
 
 /* Main amenities */
@@ -229,8 +255,55 @@ a.see-more {
     font-size: 1.35rem;
 }
 
-.foods {
+.food-menu {
+    box-shadow: 5px 5px 10px rgba(77, 77, 77, 0.5);
+    background: rgb(176,191,122);
+    background: linear-gradient(0deg, rgba(176,191,122,1) 0%, rgba(199,217,173,1) 100%);
     margin: 5rem auto;
+    text-align: left;
+    max-width: 600px;
+}
+
+.food-menu h2 {
+    text-align: center;
+}
+
+.food-list {
+    padding: 1rem;
+}
+
+.main-food {
+    display: flex;
+}
+
+.main-food .foods {
+    width: 100%;
+}
+
+.foods {
+    margin: 1rem;
+}
+
+.rule-card {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(77, 77, 77, 0.5);
+    padding: 1.3rem;
+    margin: 1rem auto;
+    font-family: 'Roboto', Arial, sans-serif;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.rule-card p {
+    margin-bottom: 3rem;
+}
+
+.rule-card ul {
+    text-align: left;
+}
+
+.rule-card li {
+    margin: 1.2rem auto;
 }
 
 /* Gallery */
@@ -253,6 +326,29 @@ a.see-more {
     object-fit: cover;
 }
 
+.note .text {
+    background-color: #ffffff;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+/* Careers */
+.careers .container {
+    margin-top: 80px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7rem auto 5rem;
+}
+
+.job-list { 
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Footer */
 .footer {
     text-align: left;
@@ -260,16 +356,21 @@ a.see-more {
 
 .footer .container {
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+    /* grid-template-column: 1fr 1fr 1fr; */
     align-items: center; 
     gap: 2rem;
     font-size: 1.2rem;
 }
 
 .footer .sns,
-.footer .number {
+.footer .address,
+.footer .navi {
     display: flex;
     flex-direction: column;
+}
+
+.footer .navi li {
+    margin: .45rem 0;
 }
 
 .fb,
@@ -355,6 +456,10 @@ a.see-more {
         margin: auto;
         height: 530px;
     }
+    .headline h1 {
+        width: 75%;
+        font-size: 2.7rem;
+    }
 
     .amenities-book .container {
         margin-bottom: 4rem;
@@ -382,6 +487,7 @@ a.see-more {
     }
     .headline h1 {
         width: 75%;
+        font-size: 3rem;
     }
     .headline .btn {
         font-size: 1.5rem;
