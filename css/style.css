@@ -363,10 +363,14 @@ a.see-more {
     object-fit: cover;
 }
 
+.note .container {
+    max-width: fit-content;
+}
+
 .note .text {
     background-color: #ffffff;
     margin: .5rem;
-    padding: 1rem;
+    padding: 2rem;
     text-align: left;
 }
 
