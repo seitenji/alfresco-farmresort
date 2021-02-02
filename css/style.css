@@ -86,7 +86,7 @@ a.link:hover {
     height: 2rem;
     z-index: 1000;
     position: fixed;
-    top: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@ a.link:hover {
     width: 100%;
     max-width: 1100px;
     left: 50%;
-    top: 1.5rem;
+    top: 0;
     transform: translateX(-50%);
     background: #F6F5EA;
 }
@@ -177,6 +177,10 @@ a.link:hover {
 
 a.see-more {
     margin: 0 0 3rem;
+}
+
+.church img {
+    max-width: 720px;
 }
 
 /* CTA */
@@ -363,6 +367,7 @@ a.see-more {
     background-color: #ffffff;
     margin: .5rem;
     padding: 1rem;
+    text-align: left;
 }
 
 /* Careers */
