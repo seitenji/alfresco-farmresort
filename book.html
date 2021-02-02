@@ -12,6 +12,9 @@
 </head>
 <body>
     <main>
+        <div class="phone-number">
+            <p>TX/Viber: <a href="tel:09171430506">0917-143-0506</a></p>
+        </div>
         <div id="navbar" class="navbar">
             <a href="index.html"><img class="nav-logo" src="images/logo2.png" alt="Al Fresco Farm Resort"></a>
             <a class="toggle-button" id="toggle-button"><i class="fas fa-bars fa-2x"></i></a>
@@ -44,20 +47,47 @@
         </section>
         <section class="book">
             <div class="container">
-                <h2>You can also send us a message below.</h2>
+                <h2>Reservation:</h2>
                 <form name="contact" method="POST" data-netlify="true">
                     <div class="fields">
                         <div class="field">
                             <p>Name*</p>
-                            <input type="text" name="name" id="name" placeholder="Name" />
+                            <input type="text" name="name" id="name" placeholder="Name" required />
                         </div>
                         <div class="field">
-                            <p>Email*</p>
+                            <p>Email</p>
                             <input type="email" name="email" id="email" placeholder="Email" />
                         </div>
                         <div class="field">
                             <p>Phone*</p>
-                            <input type="number" name="phone" id="phone" placeholder="Phone" />
+                            <input type="number" name="phone" id="phone" placeholder="Phone" required />
+                        </div>
+                        <div class="field">
+                            <p>Date*</p>
+                            <input type="date" name="date" id="date" placeholder="Date" required />
+                        </div>
+                        <div class="field">
+                            <p>Management agreed on the use of the following:</p>
+                            <div class="utilities">
+                                <input type="checkbox" id="kiddie" name="Kiddie Pool" value="Kiddie Pool">
+                                <label for="vehicle1">Kiddie Swimming Pool</label>
+                                <input type="checkbox" id="adult" name="adultPool" value="adultPool">
+                                <label for="vehicle2">Adult Swimming Pool</label>
+                                <input type="checkbox" id="hall" name="vehicle3" value="Boat">
+                                <label for="vehicle3">Function Hall</label>
+                                <input type="checkbox" id="villa1" name="vehicle1" value="Bike">
+                                <label for="vehicle1">Staycation Villa 1 Borah</label>
+                                <input type="checkbox" id="villa2" name="vehicle2" value="Car">
+                                <label for="vehicle2">Staycation Villa 2 Dakak</label>
+                                <input type="checkbox" id="gazebo" name="vehicle3" value="Boat">
+                                <label for="vehicle3">Big White Gazebo</label>
+                                <input type="checkbox" id="table" name="vehicle1" value="Bike">
+                                <label for="vehicle1">Umbrella Table</label>
+                                <input type="checkbox" id="skubo" name="vehicle2" value="Car">
+                                <label for="vehicle2">Medium Kubo</label>
+                                <input type="checkbox" id="mkubo" name="vehicle3" value="Boat">
+                                <label for="vehicle3">Small Kubo</label>
+                            </div>
                         </div>
                         <div class="field">
                             <p>Message*</p>
@@ -71,7 +101,7 @@
         <section class="note">
             <div class="container">
                 <div class="text">
-                    <i class="fas fa-exclamation-circle"></i> <b>Note</b>: Upon booking, there is a 50% downpayment to be paid first. Payment should be made 3 days before the event.
+                    <i class="fas fa-exclamation-circle"></i> <b>Note</b>: Confirmation will be made upon the downpayment. <br />Thank you 😀
                 </div>
             </div>
         </section>
@@ -85,7 +115,7 @@
                     <a class="fb" href="https://www.facebook.com/AlFrescoFarmResortPH" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg"></i></a>
                 </div>
                 <div class="address">
-                    <a href="https://goo.gl/maps/Q2RehVU9zvr7QGfT9" target="_blank" rel="noopener">Al Fresco Farm Resort, Alicia, Isabela</a>
+                    <a href="https://goo.gl/maps/Q2RehVU9zvr7QGfT9" target="_blank" rel="noopener">Al Fresco Farm Resort, Callao, Alicia, Isabela</a>
                     <a href="tel:09171430506">09171430506</a>
                     <a href="tel:09189287902">09189287902</a>
                 </div>

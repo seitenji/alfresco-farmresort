@@ -82,18 +82,38 @@ a.link:hover {
     background-color: #174794;
 }
 
+.phone-number {
+    height: 2rem;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+}
+
+.phone-number p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.1rem;
+    padding: 1.2rem 1.1rem;
     position: fixed;
     width: 100%;
     max-width: 1100px;
     left: 50%;
-    top: 0;
+    top: 1.5rem;
     transform: translateX(-50%);
     background: #F6F5EA;
 }
@@ -132,7 +152,7 @@ a.link:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .headline .btn {
@@ -185,7 +205,7 @@ a.see-more {
 }
 
 .contact .container {
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
 .contact h1 {
@@ -216,9 +236,15 @@ a.see-more {
     cursor: pointer;
 }
 
+.book .utilities {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: start;
+}
+
 /* Main amenities */
 .amenities-title .container {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .index .container {
@@ -248,7 +274,7 @@ a.see-more {
 }
 
 .main-packages .container {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .main-packages .entrance {
@@ -308,7 +334,7 @@ a.see-more {
 
 /* Gallery */
 .main-gallery .container {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .gallery img {
     height: auto;
@@ -334,7 +360,7 @@ a.see-more {
 
 /* Careers */
 .careers .container {
-    margin-top: 80px;
+    margin-top: 100px;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -403,7 +429,7 @@ a.see-more {
     .navbar {
         height: 80px;
         flex-wrap: nowrap;
-        padding: 0 1.1rem;
+        padding: 3rem 1.1rem;
     }
     .nav-ul {
         display: flex;
