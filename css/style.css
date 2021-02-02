@@ -90,7 +90,6 @@ a.link:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -240,6 +239,14 @@ a.see-more {
     display: grid;
     grid-template-columns: 1fr 4fr;
     justify-content: start;
+}
+
+.book .utilities * {
+    margin: .5rem 0;
+}
+
+.book .utilities label {
+    font-size: 1.2rem;
 }
 
 /* Main amenities */
